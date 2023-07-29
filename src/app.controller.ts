@@ -35,4 +35,9 @@ export class AppController {
   getDataFromUc(@Param('id') id: string) {
     return this.appService.getDataFromUc(id);
   }
+
+  @Get('/list/:id')
+  getList(@Param('id') id: string) {
+    return this.appService.getList(id);
+  }
 }

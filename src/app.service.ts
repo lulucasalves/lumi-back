@@ -16,15 +16,33 @@ export class AppService {
     private readonly boletoRepo: Repository<Boleto>,
   ) {}
 
-  async getDataFromUc(ucName: string) {
-    const allData = await this.boletoRepo.find({ where: { ucName } });
+  async getDataFromUc(ucNumber: string) {
+    const allData = await this.boletoRepo.find({ where: { ucNumber } });
 
     return setFormatedData(allData);
   }
 
+  async getList(ucNumber: string) {
+    const allData = await this.boletoRepo.find({ where: { ucNumber } });
+
+    return allData.map((val) => {
+      return {
+        ucNome: val.ucName,
+        ucNumero: val.ucNumber,
+        dataEmissao: val.dataEmissao,
+        dataVencimento: val.dataVencimento,
+        energiaEletrica: JSON.parse(val.data)['Energia Elétrica'].Valor,
+        icmsSt: JSON.parse(val.data)['ICMS-ST'].Valor,
+        segundaVia: JSON.parse(val.data)['Via de débito'].Valor,
+        total: JSON.parse(val.data)['Total'].Valor,
+        payed: val.payed,
+      };
+    });
+  }
+
   async deletePdf(id: string) {
     const s3 = new S3();
-    const allData = await this.boletoRepo.delete({ id });
+    await this.boletoRepo.delete({ id });
     await s3.deleteObject({ Bucket: 'lumilucas', Key: id }).promise();
     return 'Deleted';
   }

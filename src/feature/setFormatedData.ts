@@ -270,5 +270,23 @@ export function setFormatedData(dataList) {
     );
   }
 
-  return result;
+  function sortListsByX(listOfLists) {
+    let newArray = {};
+    const listOfObjects = Object.keys(listOfLists);
+    for (let i of listOfObjects) {
+      let arrayKeys = {};
+      const keys = Object.keys(listOfLists[i]);
+
+      for (let key of keys) {
+        const listGet = listOfLists[i][key].sort((a, b) => a.x - b.x);
+        arrayKeys = { ...arrayKeys, [key]: listGet };
+      }
+
+      newArray = { ...newArray, [i]: arrayKeys };
+    }
+
+    return newArray;
+  }
+
+  return sortListsByX(result);
 }
