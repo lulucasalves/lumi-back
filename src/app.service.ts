@@ -36,6 +36,8 @@ export class AppService {
         segundaVia: JSON.parse(val.data)['Via de débito'].Valor,
         total: JSON.parse(val.data)['Total'].Valor,
         payed: val.payed,
+        url: val.url,
+        id: val.id,
       };
     });
   }
