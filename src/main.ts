@@ -4,12 +4,11 @@ import { ConfigService } from 'aws-sdk';
 import { config } from 'aws-sdk';
 import 'dotenv/config';
 
-process.env.NODE_OPTIONS = '--max-old-space-size=4096';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     cors: true,
   });
-
+  console.log(process.env);
   config.update({
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
