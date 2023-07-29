@@ -71,24 +71,29 @@ export function setFormatedData(dataList) {
     });
   }
 
-  for (const key of Object.keys(result.Total)) {
-    const xsObjects = Object.keys(xs).map((val) => parseInt(val) - 1);
-    const resultKeys = result.Total[key].map((val) => val.x);
+  function complemention(resultKey: string) {
+    for (const key of Object.keys(result[resultKey])) {
+      const xsObjects = Object.keys(xs).map((val) => parseInt(val) - 1);
+      const resultKeys = result[resultKey][key].map((val) => val.x);
 
-    const missingMonths = xsObjects.filter(
-      (item) => !resultKeys.includes(item),
-    );
+      const missingMonths = xsObjects.filter(
+        (item) => !resultKeys.includes(item),
+      );
 
-    console.log(missingMonths);
+      console.log(missingMonths);
 
-    for (const x of missingMonths) {
-      result.Total[key].push({ x: x, y: 0 });
+      for (const x of missingMonths) {
+        result[resultKey][key].push({ x: x, y: 0 });
+      }
+
+      result[resultKey][key].sort(
+        (a, b) => Object.keys(xs).indexOf(a.x) - Object.keys(xs).indexOf(b.x),
+      );
     }
-
-    result.Total[key].sort(
-      (a, b) => Object.keys(xs).indexOf(a.x) - Object.keys(xs).indexOf(b.x),
-    );
   }
+
+  complemention('Total');
+
   //-------------------------------------
 
   for (const item of dataList) {
@@ -113,19 +118,8 @@ export function setFormatedData(dataList) {
     });
   }
 
-  for (const key of Object.keys(result['Energia Elétrica'])) {
-    const missingMonths = Object.keys(xs).filter((x) => {
-      return !result['Energia Elétrica'][key].some((data) => data.x === xs[x]);
-    });
+  complemention('Energia Elétrica');
 
-    for (const x of missingMonths) {
-      result['Energia Elétrica'][key].push({ x: parseInt(x) - 1, y: 0 });
-    }
-
-    result['Energia Elétrica'][key].sort(
-      (a, b) => Object.keys(xs).indexOf(a.x) - Object.keys(xs).indexOf(b.x),
-    );
-  }
   //-------------------------------------
 
   for (const item of dataList) {
@@ -150,19 +144,7 @@ export function setFormatedData(dataList) {
     });
   }
 
-  for (const key of Object.keys(result['Energia Injetada'])) {
-    const missingMonths = Object.keys(xs).filter((x) => {
-      return !result['Energia Injetada'][key].some((data) => data.x === xs[x]);
-    });
-
-    for (const x of missingMonths) {
-      result['Energia Injetada'][key].push({ x: parseInt(x) - 1, y: 0 });
-    }
-
-    result['Energia Injetada'][key].sort(
-      (a, b) => Object.keys(xs).indexOf(a.x) - Object.keys(xs).indexOf(b.x),
-    );
-  }
+  complemention('Energia Injetada');
 
   //-------------------------------------------------------------
   for (const item of dataList) {
@@ -185,19 +167,7 @@ export function setFormatedData(dataList) {
     });
   }
 
-  for (const key of Object.keys(result.ICMS)) {
-    const missingMonths = Object.keys(xs).filter((x) => {
-      return !result.ICMS[key].some((data) => data.x === xs[x]);
-    });
-
-    for (const x of missingMonths) {
-      result.ICMS[key].push({ x: parseInt(x) - 1, y: 0 });
-    }
-
-    result.ICMS[key].sort(
-      (a, b) => Object.keys(xs).indexOf(a.x) - Object.keys(xs).indexOf(b.x),
-    );
-  }
+  complemention('ICMS');
 
   //--------------------------------------------
   for (const item of dataList) {
@@ -209,19 +179,7 @@ export function setFormatedData(dataList) {
     result['ICMS-ST'].Valor.push({ x: xName, y: valor });
   }
 
-  for (const key of Object.keys(result['ICMS-ST'])) {
-    const missingMonths = Object.keys(xs).filter((x) => {
-      return !result['ICMS-ST'][key].some((data) => data.x === xs[x]);
-    });
-
-    for (const x of missingMonths) {
-      result['ICMS-ST'][key].push({ x: parseInt(x) - 1, y: 0 });
-    }
-
-    result['ICMS-ST'][key].sort(
-      (a, b) => Object.keys(xs).indexOf(a.x) - Object.keys(xs).indexOf(b.x),
-    );
-  }
+  complemention('ICMS-ST');
 
   //-----------------------------------
 
@@ -235,19 +193,7 @@ export function setFormatedData(dataList) {
     result.Contribuição.Valor.push({ x: xName, y: valor });
   }
 
-  for (const key of Object.keys(result.Contribuição)) {
-    const missingMonths = Object.keys(xs).filter((x) => {
-      return !result.Contribuição[key].some((data) => data.x === xs[x]);
-    });
-
-    for (const x of missingMonths) {
-      result.Contribuição[key].push({ x: parseInt(x) - 1, y: 0 });
-    }
-
-    result.Contribuição[key].sort(
-      (a, b) => Object.keys(xs).indexOf(a.x) - Object.keys(xs).indexOf(b.x),
-    );
-  }
+  complemention('Contribuição');
 
   //-------------------------------------------------------------
 
@@ -261,28 +207,16 @@ export function setFormatedData(dataList) {
     result['Via de débito'].Valor.push({ x: xName, y: valor });
   }
 
-  for (const key of Object.keys(result['Via de débito'])) {
-    const missingMonths = Object.keys(xs).filter((x) => {
-      return !result['Via de débito'][key].some((data) => data.x === xs[x]);
-    });
-
-    for (const x of missingMonths) {
-      result['Via de débito'][key].push({ x: parseInt(x) - 1, y: 0 });
-    }
-
-    result['Via de débito'][key].sort(
-      (a, b) => Object.keys(xs).indexOf(a.x) - Object.keys(xs).indexOf(b.x),
-    );
-  }
+  complemention('Via de débito');
 
   function sortListsByX(listOfLists) {
     let newArray = {};
     const listOfObjects = Object.keys(listOfLists);
-    for (let i of listOfObjects) {
+    for (const i of listOfObjects) {
       let arrayKeys = {};
       const keys = Object.keys(listOfLists[i]);
 
-      for (let key of keys) {
+      for (const key of keys) {
         const listGet = listOfLists[i][key].sort((a, b) => a.x - b.x);
         arrayKeys = { ...arrayKeys, [key]: listGet };
       }
