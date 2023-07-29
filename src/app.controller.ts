@@ -19,17 +19,17 @@ export class AppController {
     return this.appService.getData();
   }
 
-  // @Post('/pdf')
-  // @UseInterceptors(FilesInterceptor('files')) // 'files' é o nome do campo do formulário para os arquivos PDF
-  // sendPdf(@UploadedFiles() files) {
-  //   return this.appService.sendPdf(files);
-  // }
+  @Post('/pdf')
+  @UseInterceptors(FilesInterceptor('files')) // 'files' é o nome do campo do formulário para os arquivos PDF
+  sendPdf(@UploadedFiles() files) {
+    return this.appService.sendPdf(files);
+  }
 
-  // @Delete('/pdf/:id')
-  // @UseInterceptors(FilesInterceptor('files')) // 'files' é o nome do campo do formulário para os arquivos PDF
-  // deletePdf(@Param('id') id: string) {
-  //   return this.appService.deletePdf(id);
-  // }
+  @Delete('/pdf/:id')
+  @UseInterceptors(FilesInterceptor('files')) // 'files' é o nome do campo do formulário para os arquivos PDF
+  deletePdf(@Param('id') id: string) {
+    return this.appService.deletePdf(id);
+  }
 
   @Get('/uc/:id')
   getDataFromUc(@Param('id') id: string) {
