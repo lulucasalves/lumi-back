@@ -72,12 +72,17 @@ export function setFormatedData(dataList) {
   }
 
   for (const key of Object.keys(result.Total)) {
-    const missingMonths = Object.keys(xs).filter((x) => {
-      return !result.Total[key].some((data) => data.x === xs[x]);
-    });
+    const xsObjects = Object.keys(xs).map((val) => parseInt(val) - 1);
+    const resultKeys = result.Total[key].map((val) => val.x);
+
+    const missingMonths = xsObjects.filter(
+      (item) => !resultKeys.includes(item),
+    );
+
+    console.log(missingMonths);
 
     for (const x of missingMonths) {
-      result.Total[key].push({ x: parseInt(x) - 1, y: 0 });
+      result.Total[key].push({ x: x, y: 0 });
     }
 
     result.Total[key].sort(
