@@ -5,17 +5,22 @@ import { Boleto } from './models/boleto';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { typeOrmConfig } from './typeorm';
 import { ThrottlerModule } from '@nestjs/throttler';
+import { RateLimiterGuard, RateLimiterModule } from 'nestjs-rate-limiter';
+import { APP_GUARD } from '@nestjs/core';
 
 @Module({
   imports: [
     TypeOrmModule.forFeature([Boleto]),
     TypeOrmModule.forRoot(typeOrmConfig),
-    ThrottlerModule.forRoot({
-      ttl: 60,
-      limit: 10,
-    }),
+    RateLimiterModule,
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [
+    AppService,
+    {
+      provide: APP_GUARD,
+      useClass: RateLimiterGuard,
+    },
+  ],
 })
 export class AppModule {}
