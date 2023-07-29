@@ -4,6 +4,7 @@ import { ConfigService } from 'aws-sdk';
 import { config } from 'aws-sdk';
 import 'dotenv/config';
 
+process.env.NODE_OPTIONS = '--max-old-space-size=4096';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     cors: true,
