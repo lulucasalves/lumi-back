@@ -1,6 +1,5 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { ConfigService } from 'aws-sdk';
 import { config } from 'aws-sdk';
 import 'dotenv/config';
 
