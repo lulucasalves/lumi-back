@@ -6,9 +6,11 @@ import { Repository } from 'typeorm';
 import { S3 } from 'aws-sdk';
 import * as pdfjs from 'pdfjs-dist';
 import { sendDataFromPdf } from './feature/getObjectsData';
-import { v4 } from 'uuid';
+// import { v4 } from 'uuid';
 import { setFormatedData } from './feature/setFormatedData';
-
+function v4() {
+  return '1';
+}
 @Injectable()
 export class AppService {
   constructor(
