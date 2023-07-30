@@ -9,6 +9,41 @@ import { sendDataFromPdf } from './feature/getObjectsData';
 import { v4 } from 'uuid';
 import { setFormatedData } from './feature/setFormatedData';
 
+export interface IDataObject {
+  Total: {
+    Quantidade: { x: number; y: number }[];
+    Valor: { x: number; y: number }[];
+    'Tarifa Unitária': { x: number; y: number }[];
+    'Preço Unitário': { x: number; y: number }[];
+  };
+  'Energia Elétrica': {
+    Quantidade: { x: number; y: number }[];
+    Valor: { x: number; y: number }[];
+    'Tarifa Unitária': { x: number; y: number }[];
+    'Preço Unitário': { x: number; y: number }[];
+  };
+  'Energia Injetada': {
+    Quantidade: { x: number; y: number }[];
+    Valor: { x: number; y: number }[];
+    'Tarifa Unitária': { x: number; y: number }[];
+    'Preço Unitário': { x: number; y: number }[];
+  };
+  ICMS: {
+    Quantidade: { x: number; y: number }[];
+    'Tarifa Unitária': { x: number; y: number }[];
+    'Preço Unitário': { x: number; y: number }[];
+  };
+  'ICMS-ST': {
+    Valor: { x: number; y: number }[];
+  };
+  Contribuição: {
+    Valor: { x: number; y: number }[];
+  };
+  'Via de débito': {
+    Valor: { x: number; y: number | string }[];
+  };
+}
+
 @Injectable()
 export class AppService {
   constructor(
@@ -16,11 +51,15 @@ export class AppService {
     private readonly boletoRepo: Repository<Boleto>,
   ) {}
 
-  async getDataFromUc(ucNumber: string) {
+  async getDataFromUc(
+    ucNumber: string,
+  ): Promise<IDataObject | { message: string }> {
     try {
-      const allData = await this.boletoRepo.find({ where: { ucNumber } });
+      const allData = await this.boletoRepo.find({
+        where: { ucNumber },
+      });
 
-      return setFormatedData(allData);
+      return setFormatedData(allData) as IDataObject;
     } catch (err) {
       console.log(err);
       return { message: 'Ocorreu um erro ao adquirir os dados!' };
@@ -57,6 +96,16 @@ export class AppService {
       const s3 = new S3();
 
       const ucNumber = await this.boletoRepo.findOne({ where: { id } });
+
+      const uc = await this.boletoRepo.find({
+        where: { ucNumber: ucNumber.ucNumber },
+      });
+
+      if (uc.length < 2) {
+        return {
+          message: 'É necessário possuir pelo menos 1 boleto no sistema!',
+        };
+      }
       await this.boletoRepo.delete({ id });
       await s3.deleteObject({ Bucket: 'lumilucas', Key: id }).promise();
       return this.getList(ucNumber.ucNumber);
@@ -68,7 +117,6 @@ export class AppService {
 
   async putPdf({ id, payed }: { id: string; payed: boolean }) {
     try {
-      console.log(id, payed);
       await this.boletoRepo.update({ id }, { payed });
       const ucNumber = await this.boletoRepo.findOne({ where: { id } });
 

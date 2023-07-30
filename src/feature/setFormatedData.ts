@@ -80,8 +80,6 @@ export function setFormatedData(dataList) {
         (item) => !resultKeys.includes(item),
       );
 
-      console.log(missingMonths);
-
       for (const x of missingMonths) {
         result[resultKey][key].push({ x: x, y: 0 });
       }
@@ -125,7 +123,6 @@ export function setFormatedData(dataList) {
   for (const item of dataList) {
     const dataJson = JSON.parse(item.data);
     const quantidade = dataJson['Energia Injetada'].Quantidade;
-    const valor = dataJson['Energia Injetada'].Valor;
     const tarifa = dataJson['Energia Injetada']['Tarifa Unitária'];
     const preco = dataJson['Energia Injetada']['Preço Unitário'];
 
