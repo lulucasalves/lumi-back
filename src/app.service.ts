@@ -146,6 +146,14 @@ export class AppService {
             return { message: 'Este boleto já foi cadastrado!' };
           }
 
+          const [, year] = processedData['Data de emissão'].split('/');
+
+          if (year !== '2023') {
+            return {
+              message: 'Nesta versão só é permitido boletos emitidos em 2023!',
+            };
+          }
+
           const params: AWS.S3.PutObjectRequest = {
             Bucket: 'lumilucas',
             Key: `${v4()}-${file.originalname}`, // Defina o caminho e o nome do arquivo no S3
