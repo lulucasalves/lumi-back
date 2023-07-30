@@ -146,7 +146,8 @@ export class AppService {
             return { message: 'Este boleto já foi cadastrado!' };
           }
 
-          const [, year] = processedData['Data de emissão'].split('/');
+          const [day, month, year] =
+            processedData['Data de emissão'].split('/');
 
           if (year !== '2023') {
             return {
