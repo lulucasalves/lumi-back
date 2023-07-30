@@ -177,12 +177,12 @@ export class AppService {
             data: JSON.stringify(processedData.data),
           });
 
-          data.push(result.Location);
+          data.push(processedData['Número UC']);
         } catch (err) {
           console.log(err);
         }
       }
-      return data;
+      return this.getList(data[0]);
     } catch (err) {
       console.log(err);
       return 'Ocorreu um erro ao enviar o boleto!';
