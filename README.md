@@ -12,4 +12,4 @@ Para iniciar o projeto localmente basta digitar o comando `yarn && yarn build &&
 
 ### Deploy
 
-O deploy da aplicação foi no Render,
+O deploy da aplicação foi no Render
