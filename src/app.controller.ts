@@ -1,9 +1,11 @@
 import {
+  Body,
   Controller,
   Delete,
   Get,
   Param,
   Post,
+  Put,
   UploadedFiles,
   UseInterceptors,
 } from '@nestjs/common';
@@ -23,6 +25,12 @@ export class AppController {
   @UseInterceptors(FilesInterceptor('files')) // 'files' é o nome do campo do formulário para os arquivos PDF
   sendPdf(@UploadedFiles() files) {
     return this.appService.sendPdf(files);
+  }
+
+  @Put('/pdf')
+  @UseInterceptors(FilesInterceptor('files')) // 'files' é o nome do campo do formulário para os arquivos PDF
+  changePdf(@Body() value) {
+    return this.appService.putPdf(value);
   }
 
   @Delete('/pdf/:id')

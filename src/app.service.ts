@@ -68,6 +68,7 @@ export class AppService {
 
   async putPdf({ id, payed }: { id: string; payed: boolean }) {
     try {
+      console.log(id, payed);
       await this.boletoRepo.update({ id }, { payed });
       const ucNumber = await this.boletoRepo.findOne({ where: { id } });
 
