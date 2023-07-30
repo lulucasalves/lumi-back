@@ -39,7 +39,7 @@ export class AppService {
           dataVencimento: val.dataVencimento,
           energiaEletrica: JSON.parse(val.data)['Energia Elétrica'].Valor,
           icmsSt: JSON.parse(val.data)['ICMS-ST'].Valor,
-          segundaVia: JSON.parse(val.data)['Via de débito'].Valor,
+          viaDebito: JSON.parse(val.data)['Via de débito'],
           total: JSON.parse(val.data)['Total'].Valor,
           payed: val.payed,
           url: val.url,
