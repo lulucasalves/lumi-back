@@ -17,59 +17,93 @@ export class AppService {
   ) {}
 
   async getDataFromUc(ucNumber: string) {
-    const allData = await this.boletoRepo.find({ where: { ucNumber } });
+    try {
+      const allData = await this.boletoRepo.find({ where: { ucNumber } });
 
-    return setFormatedData(allData);
+      return setFormatedData(allData);
+    } catch (err) {
+      console.log(err);
+      return { message: 'Ocorreu um erro ao adquirir os dados!' };
+    }
   }
 
   async getList(ucNumber: string) {
-    const allData = await this.boletoRepo.find({ where: { ucNumber } });
+    try {
+      const allData = await this.boletoRepo.find({ where: { ucNumber } });
 
-    return allData.map((val) => {
-      return {
-        ucNome: val.ucName,
-        ucNumero: val.ucNumber,
-        dataEmissao: val.dataEmissao,
-        dataVencimento: val.dataVencimento,
-        energiaEletrica: JSON.parse(val.data)['Energia Elétrica'].Valor,
-        icmsSt: JSON.parse(val.data)['ICMS-ST'].Valor,
-        segundaVia: JSON.parse(val.data)['Via de débito'].Valor,
-        total: JSON.parse(val.data)['Total'].Valor,
-        payed: val.payed,
-        url: val.url,
-        id: val.id,
-      };
-    });
+      return allData.map((val) => {
+        return {
+          ucNome: val.ucName,
+          ucNumero: val.ucNumber,
+          dataEmissao: val.dataEmissao,
+          dataVencimento: val.dataVencimento,
+          energiaEletrica: JSON.parse(val.data)['Energia Elétrica'].Valor,
+          icmsSt: JSON.parse(val.data)['ICMS-ST'].Valor,
+          segundaVia: JSON.parse(val.data)['Via de débito'].Valor,
+          total: JSON.parse(val.data)['Total'].Valor,
+          payed: val.payed,
+          url: val.url,
+          id: val.id,
+        };
+      });
+    } catch (err) {
+      console.log(err);
+      return { message: 'Ocorreu um erro ao adquirir os dados!' };
+    }
   }
 
   async deletePdf(id: string) {
-    const s3 = new S3();
-    await this.boletoRepo.delete({ id });
-    await s3.deleteObject({ Bucket: 'lumilucas', Key: id }).promise();
-    return 'Deleted';
+    try {
+      const s3 = new S3();
+
+      const ucNumber = await this.boletoRepo.findOne({ where: { id } });
+      await this.boletoRepo.delete({ id });
+      await s3.deleteObject({ Bucket: 'lumilucas', Key: id }).promise();
+      return this.getList(ucNumber.ucNumber);
+    } catch (err) {
+      console.log(err);
+      return { message: 'Ocorreu um erro ao deletar este boleto!' };
+    }
+  }
+
+  async putPdf({ id, payed }: { id: string; payed: boolean }) {
+    try {
+      await this.boletoRepo.update({ id }, { payed });
+      const ucNumber = await this.boletoRepo.findOne({ where: { id } });
+
+      return this.getList(ucNumber.ucNumber);
+    } catch (err) {
+      console.log(err);
+      return { message: 'Ocorreu um erro ao alterar este boleto!' };
+    }
   }
 
   async getData() {
-    const allData = await this.boletoRepo.find();
+    try {
+      const allData = await this.boletoRepo.find();
 
-    function removeRepeatedItems(array) {
-      // Cria um objeto para rastrear os itens únicos
-      const itensUnicos = {};
+      function removeRepeatedItems(array) {
+        // Cria um objeto para rastrear os itens únicos
+        const itensUnicos = {};
 
-      // Filtra o array, mantendo apenas os itens que ainda não foram adicionados ao objeto itensUnicos
-      const arraySemRepeticao = array.filter((item) => {
-        if (!itensUnicos[item]) {
-          itensUnicos[item] = true;
-          return true;
-        }
-        return false;
-      });
+        // Filtra o array, mantendo apenas os itens que ainda não foram adicionados ao objeto itensUnicos
+        const arraySemRepeticao = array.filter((item) => {
+          if (!itensUnicos[item]) {
+            itensUnicos[item] = true;
+            return true;
+          }
+          return false;
+        });
 
-      return arraySemRepeticao;
+        return arraySemRepeticao;
+      }
+      return removeRepeatedItems(
+        allData.map((data) => `${data.ucName} - ${data.ucNumber}`),
+      );
+    } catch (err) {
+      console.log(err);
+      return { message: 'Ocorreu um erro ao adquirir os dados!' };
     }
-    return removeRepeatedItems(
-      allData.map((data) => `${data.ucName} - ${data.ucNumber}`),
-    );
   }
 
   async sendPdf(files) {
@@ -141,6 +175,7 @@ export class AppService {
       return data;
     } catch (err) {
       console.log(err);
+      return 'Ocorreu um erro ao enviar o boleto!';
     }
   }
 }
