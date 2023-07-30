@@ -194,6 +194,10 @@ export class AppService {
             return { message: 'Este boleto já foi cadastrado!' };
           }
 
+          if (!processedData.data.Total.Quantidade) {
+            return { message: 'Ocorreu um erro ao enviar o boleto!' };
+          }
+
           const [day, month, year] =
             processedData['Data de emissão'].split('/');
 
@@ -234,7 +238,7 @@ export class AppService {
       return this.getList(data[0]['Número UC']);
     } catch (err) {
       console.log(err);
-      return 'Ocorreu um erro ao enviar o boleto!';
+      return { message: 'Ocorreu um erro ao enviar o boleto!' };
     }
   }
 }
