@@ -182,7 +182,8 @@ export class AppService {
           console.log(err);
         }
       }
-      return this.getList(data[0]);
+
+      return this.getList(data[0]['Número UC']);
     } catch (err) {
       console.log(err);
       return 'Ocorreu um erro ao enviar o boleto!';
