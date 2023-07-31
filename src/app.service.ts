@@ -131,24 +131,33 @@ export class AppService {
     try {
       const allData = await this.boletoRepo.find();
 
-      function removeRepeatedItems(array) {
+      function removeRepeatedItems(array: string[]) {
         // Cria um objeto para rastrear os itens únicos
-        const itensUnicos = {};
+        const uniqueItems = {};
 
         // Filtra o array, mantendo apenas os itens que ainda não foram adicionados ao objeto itensUnicos
-        const arraySemRepeticao = array.filter((item) => {
-          if (!itensUnicos[item]) {
-            itensUnicos[item] = true;
+        const arrayNoRepeat = array.filter((item) => {
+          if (!uniqueItems[item]) {
+            uniqueItems[item] = true;
             return true;
           }
           return false;
         });
 
-        return arraySemRepeticao;
+        return arrayNoRepeat;
       }
-      return removeRepeatedItems(
-        allData.map((data) => `${data.ucName} - ${data.ucNumber}`),
-      );
+
+      return {
+        ucs: removeRepeatedItems(
+          allData.map((data) => `${data.ucName} - ${data.ucNumber}`),
+        ),
+        years: removeRepeatedItems(
+          allData.map((data) => {
+            const [day, month, year] = data.dataEmissao.split('/');
+            return year;
+          }),
+        ).sort((a, b) => parseInt(b) - parseInt(a)),
+      };
     } catch (err) {
       console.log(err);
       return { message: 'Ocorreu um erro ao adquirir os dados!' };
