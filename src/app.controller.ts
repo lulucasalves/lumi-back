@@ -39,13 +39,13 @@ export class AppController {
     return this.appService.deletePdf(id);
   }
 
-  @Get('/uc/:id')
-  getDataFromUc(@Param('id') id: string) {
-    return this.appService.getDataFromUc(id);
+  @Get('/uc/:id/:year')
+  getDataFromUc(@Param('year') year: string, @Param('id') id: string) {
+    return this.appService.getDataFromUc(id, year);
   }
 
-  @Get('/list/:id')
-  getList(@Param('id') id: string) {
-    return this.appService.getList(id);
+  @Get('/list/:id/:year')
+  getList(@Param('year') year: string, @Param('id') id: string) {
+    return this.appService.getList(id, year);
   }
 }

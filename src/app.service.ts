@@ -53,24 +53,37 @@ export class AppService {
 
   async getDataFromUc(
     ucNumber: string,
+    yearEmit: string,
   ): Promise<IDataObject | { message: string }> {
     try {
       const allData = await this.boletoRepo.find({
         where: { ucNumber },
       });
 
-      return setFormatedData(allData) as IDataObject;
+      const filteradYear = allData.filter((val) => {
+        const [day, month, year] = val.dataEmissao.split('/');
+
+        return year === yearEmit;
+      });
+
+      return setFormatedData(filteradYear) as IDataObject;
     } catch (err) {
       console.log(err);
       return { message: 'Ocorreu um erro ao adquirir os dados!' };
     }
   }
 
-  async getList(ucNumber: string) {
+  async getList(ucNumber: string, yearEmit: string) {
     try {
       const allData = await this.boletoRepo.find({ where: { ucNumber } });
 
-      return allData.map((val) => {
+      const filteradYear = allData.filter((val) => {
+        const [day, month, year] = val.dataEmissao.split('/');
+
+        return year === yearEmit;
+      });
+
+      return filteradYear.map((val) => {
         return {
           ucNome: val.ucName,
           ucNumero: val.ucNumber,
@@ -95,20 +108,11 @@ export class AppService {
     try {
       const s3 = new S3();
 
-      const ucNumber = await this.boletoRepo.findOne({ where: { id } });
-
-      const uc = await this.boletoRepo.find({
-        where: { ucNumber: ucNumber.ucNumber },
-      });
-
-      if (uc.length < 2) {
-        return {
-          message: 'É necessário possuir pelo menos 1 boleto no sistema!',
-        };
-      }
+      const uc = await this.boletoRepo.findOne({ where: { id } });
+      const [day, month, year] = uc.dataEmissao.split('/');
       await this.boletoRepo.delete({ id });
       await s3.deleteObject({ Bucket: 'lumilucas', Key: id }).promise();
-      return this.getList(ucNumber.ucNumber);
+      return this.getList(uc.ucNumber, year);
     } catch (err) {
       console.log(err);
       return { message: 'Ocorreu um erro ao deletar este boleto!' };
@@ -118,9 +122,9 @@ export class AppService {
   async putPdf({ id, payed }: { id: string; payed: boolean }) {
     try {
       await this.boletoRepo.update({ id }, { payed });
-      const ucNumber = await this.boletoRepo.findOne({ where: { id } });
-
-      return this.getList(ucNumber.ucNumber);
+      const uc = await this.boletoRepo.findOne({ where: { id } });
+      const [day, month, year] = uc.dataEmissao.split('/');
+      return this.getList(uc.ucNumber, year);
     } catch (err) {
       console.log(err);
       return { message: 'Ocorreu um erro ao alterar este boleto!' };
@@ -244,7 +248,9 @@ export class AppService {
         }
       }
 
-      return this.getList(data[0]['Número UC']);
+      const [day, month, year] = data[0].dataEmissao.split('/');
+
+      return this.getList(data[0]['Número UC'], year);
     } catch (err) {
       console.log(err);
       return { message: 'Ocorreu um erro ao enviar o boleto!' };
