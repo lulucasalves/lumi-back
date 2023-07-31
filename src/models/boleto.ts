@@ -8,7 +8,7 @@ export class Boleto {
   @Column()
   ucName: string;
 
-  @Column()
+  @Column({ unique: true })
   ucNumber: string;
 
   @Column()

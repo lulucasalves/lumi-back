@@ -130,7 +130,6 @@ export function setFormatedData(dataList) {
     const xName = parseInt(x) - 1;
 
     result['Energia Injetada'].Quantidade.push({ x: xName, y: quantidade });
-    // result['Energia Injetada'].Valor.push({ x: xName, y: valor });
     result['Energia Injetada']['Tarifa Unitária'].push({
       x: xName,
       y: tarifa,

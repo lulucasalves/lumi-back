@@ -1,4 +1,4 @@
-import { transformNumber } from './transformNumber';
+import { transformNumber } from '.';
 
 export function sendDataFromPdf(data: string[]) {
   let comprovantePagamento = 0;
@@ -16,6 +16,7 @@ export function sendDataFromPdf(data: string[]) {
       outrasAtividades = i;
     }
   }
+
   const energiaEletricaQuantidade = data[31];
   const energiaEletricaPrecoUnitario = data[33];
   const energiaEletricaValor = data[35];
@@ -38,10 +39,10 @@ export function sendDataFromPdf(data: string[]) {
   const [, anoEmissao] = data[comprovantePagamento + 23].split('/');
   const dataEmissao = `${data[outrasAtividades + 4]}/${anoEmissao}`;
   const dataVencimento = data[comprovantePagamento + 25];
-
   const debitoValor = viadebito !== '-' ? transformNumber(viadebito) : 0;
   const icmsSt =
     transformNumber(icmsValor) + transformNumber(energiaInjetadaValor);
+
   return {
     'Nome UC': nomeUc,
     'Número UC': numeroUc,

@@ -1,13 +1,13 @@
 /* eslint-disable prefer-const */
 import { Injectable } from '@nestjs/common';
-import { Boleto } from './models/boleto';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { S3 } from 'aws-sdk';
-import * as pdfjs from 'pdfjs-dist';
-import { sendDataFromPdf } from './feature/getObjectsData';
 import { v4 } from 'uuid';
-import { setFormatedData } from './feature/setFormatedData';
+import * as pdfjs from 'pdfjs-dist';
+
+import { Boleto } from './models';
+import { sendDataFromPdf, setFormatedData } from './feature';
 
 export interface IDataObject {
   Total: {

@@ -1,13 +1,14 @@
 import { Test } from '@nestjs/testing';
+
 import { AppService } from '../app.service';
-import { RootModule } from './root-test.module'; // Importe o módulo de teste aqui
+import { RootModule } from './root-test.module';
 
 describe('AppService', () => {
   let appService: AppService;
 
   beforeEach(async () => {
     const moduleRef = await Test.createTestingModule({
-      imports: [RootModule], // Importe o módulo de teste aqui
+      imports: [RootModule],
     }).compile();
 
     appService = moduleRef.get<AppService>(AppService);

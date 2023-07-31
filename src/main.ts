@@ -1,6 +1,8 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
 import { config } from 'aws-sdk';
+
+import { AppModule } from './app.module';
+
 import 'dotenv/config';
 
 async function bootstrap() {
