@@ -14,7 +14,7 @@ describe('AppService', () => {
   });
 
   it('should return a object for graphics', async () => {
-    const data = await appService.getDataFromUc('7202788969');
+    const data = await appService.getDataFromUc('7202788969', '2023');
 
     expect(data).toHaveProperty('Total');
     expect(data).toHaveProperty('Energia Elétrica');
@@ -26,7 +26,7 @@ describe('AppService', () => {
   });
 
   it('should return list of data', async () => {
-    const data = await appService.getList('3434');
+    const data = await appService.getList('3434', '2023');
 
     expect(data).toStrictEqual([]);
   });

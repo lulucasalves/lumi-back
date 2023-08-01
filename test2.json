@@ -1,0 +1,3019 @@
+[
+  [
+    {
+      "str": "Valores Faturados",
+      "dir": "ltr",
+      "width": 78.525,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 258.35, 618.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 23.15, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "Itens da Fatura",
+      "dir": "ltr",
+      "width": 49.791000000000004,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 23.15, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 99.65899999999999,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 72.941, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Unid.",
+      "dir": "ltr",
+      "width": 17.5,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 172.6, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 19.850000000000023,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 190.09999999999997, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Quant.",
+      "dir": "ltr",
+      "width": 22.169,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 209.95, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 22.43100000000007,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 232.11899999999994, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Preço Unit",
+      "dir": "ltr",
+      "width": 35.007000000000026,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 254.55, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 19.293000000000006,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 289.557, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Valor",
+      "dir": "ltr",
+      "width": 17.506999999999998,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 308.85, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 1.3829999999999814,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 326.357, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "(R$)",
+      "dir": "ltr",
+      "width": 9.719999999999999,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 327.74, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 9.336000000000013,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 337.46000000000004, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "PIS/COFINS",
+      "dir": "ltr",
+      "width": 39.676,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 346.79600000000005, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 9.627999999999986,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 386.47200000000004, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Base Calc.",
+      "dir": "ltr",
+      "width": 35.40600000000003,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 396.1, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 17.24399999999997,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 431.50600000000003, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Aliq.",
+      "dir": "ltr",
+      "width": 15.168999999999999,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 448.75, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 23.380999999999972,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 463.91900000000004, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "ICMS",
+      "dir": "ltr",
+      "width": 17.5,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 487.3, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 15.400000000000034,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 504.8, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Tarifa Unit.",
+      "dir": "ltr",
+      "width": 36.56100000000003,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 520.2, 610.3],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "ICMS",
+      "dir": "ltr",
+      "width": 17.5,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 405.1, 601.9],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 25,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 422.6, 601.9],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "ICMS",
+      "dir": "ltr",
+      "width": 17.5,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 447.6, 601.9],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 26.9, 592.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "Energia Elétrica",
+      "dir": "ltr",
+      "width": 49.434,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 26.9, 592.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 102.41600000000001,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 76.33399999999999, 592.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "kWh",
+      "dir": "ltr",
+      "width": 14,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 178.75, 592.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 24.579999999999984,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 192.75, 592.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "100",
+      "dir": "ltr",
+      "width": 11.697,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 217.32999999999998, 592.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 26.769000000000005,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 229.027, 592.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0,83833281",
+      "dir": "ltr",
+      "width": 37.044000000000004,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 255.796, 592.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 28.28200000000021,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 292.84, 592.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "83,81",
+      "dir": "ltr",
+      "width": 17.549,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 321.1220000000002, 592.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 183.57499999999982,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 338.67100000000016, 592.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0,65313000",
+      "dir": "ltr",
+      "width": 37.044000000000004,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 522.246, 592.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "En comp. s/ ICMS",
+      "dir": "ltr",
+      "width": 56.441,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 26.9, 582.7],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 95.409,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 83.341, 582.7],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "kWh",
+      "dir": "ltr",
+      "width": 14,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 178.75, 582.7],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 18.738,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 192.75, 582.7],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "1.121",
+      "dir": "ltr",
+      "width": 17.549000000000003,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 211.488, 582.7],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 26.758999999999986,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 229.037, 582.7],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0,68743290",
+      "dir": "ltr",
+      "width": 37.044000000000004,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 255.796, 582.7],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 24.386000000000195,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 292.84, 582.7],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "770,59",
+      "dir": "ltr",
+      "width": 21.448,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 317.22600000000017, 582.7],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 183.57199999999983,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 338.67400000000015, 582.7],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0,65313000",
+      "dir": "ltr",
+      "width": 37.044000000000004,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 522.246, 582.7],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "Energia injetada HFP",
+      "dir": "ltr",
+      "width": 66.57000000000001,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 26.9, 573.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 85.28000000000002,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 93.46999999999998, 573.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "kWh",
+      "dir": "ltr",
+      "width": 14,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 178.75, 573.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 18.738,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 192.75, 573.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "1.121",
+      "dir": "ltr",
+      "width": 17.549000000000003,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 211.488, 573.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 26.758999999999986,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 229.037, 573.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0,65313000",
+      "dir": "ltr",
+      "width": 37.044000000000004,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 255.796, 573.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 22.040000000000134,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 292.84, 573.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "-732,15",
+      "dir": "ltr",
+      "width": 23.8,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 314.8800000000001, 573.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 183.56599999999992,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 338.68000000000006, 573.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0,65313000",
+      "dir": "ltr",
+      "width": 37.044000000000004,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 522.246, 573.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "Contrib Ilum Publica Municipal",
+      "dir": "ltr",
+      "width": 94.213,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 26.9, 563.5],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 200.00100000000026,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 121.11299999999999, 563.5],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "35,92",
+      "dir": "ltr",
+      "width": 17.549,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 321.11400000000026, 563.5],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [7.5, 0, 0, 7.5, 26.9, 553.9],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "TOTAL",
+      "dir": "ltr",
+      "width": 24.9975,
+      "height": 7.5,
+      "transform": [7.5, 0, 0, 7.5, 26.9, 553.9],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 263.83249999999987,
+      "height": 0,
+      "transform": [7.5, 0, 0, 7.5, 51.897499999999994, 553.9],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "158,17",
+      "dir": "ltr",
+      "width": 22.935000000000002,
+      "height": 7.5,
+      "transform": [7.5, 0, 0, 7.5, 315.72999999999985, 553.9],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 79.55, 272.35],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "Histórico de Consumo",
+      "dir": "ltr",
+      "width": 96.012,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 79.55, 272.35],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 17, 262.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "MÊS/ANO",
+      "dir": "ltr",
+      "width": 32.249,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 17, 262.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 24.301000000000002,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 49.248999999999995, 262.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "Cons. kWh",
+      "dir": "ltr",
+      "width": 34.24399999999999,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 73.55, 262.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 19.756,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 107.794, 262.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "Média kWh/Dia",
+      "dir": "ltr",
+      "width": 47.488,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 127.55, 262.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 9.212000000000018,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 175.03799999999998, 262.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "Dias",
+      "dir": "ltr",
+      "width": 13.992999999999999,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 184.25, 262.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 17, 252.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "MAI/23",
+      "dir": "ltr",
+      "width": 15.86,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 17, 252.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 46.82799999999999,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 32.86, 252.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "1.221",
+      "dir": "ltr",
+      "width": 17.549000000000003,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 79.68799999999999, 252.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 39.14699999999999,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 97.237, 252.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "38,15",
+      "dir": "ltr",
+      "width": 17.549,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 136.384, 252.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 31.009000000000015,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 153.933, 252.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "32",
+      "dir": "ltr",
+      "width": 7.798,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 184.942, 252.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 17, 242.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "ABR/23",
+      "dir": "ltr",
+      "width": 17.21,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 17, 242.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 45.47799999999999,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 34.21, 242.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "1.341",
+      "dir": "ltr",
+      "width": 17.549000000000003,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 79.68799999999999, 242.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 39.14699999999999,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 97.237, 242.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "44,70",
+      "dir": "ltr",
+      "width": 17.549,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 136.384, 242.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 31.009000000000015,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 153.933, 242.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "30",
+      "dir": "ltr",
+      "width": 7.798,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 184.942, 242.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 17, 232.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "MAR/23",
+      "dir": "ltr",
+      "width": 18.07,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 17, 232.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 44.617999999999995,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 35.06999999999999, 232.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "1.771",
+      "dir": "ltr",
+      "width": 17.549000000000003,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 79.68799999999999, 232.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 39.14699999999999,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 97.237, 232.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "53,66",
+      "dir": "ltr",
+      "width": 17.549,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 136.384, 232.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 31.009000000000015,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 153.933, 232.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "33",
+      "dir": "ltr",
+      "width": 7.798,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 184.942, 232.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 17, 221.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "FEV/23",
+      "dir": "ltr",
+      "width": 16.675,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 17, 221.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 46.01299999999999,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 33.675, 221.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "1.343",
+      "dir": "ltr",
+      "width": 17.549000000000003,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 79.68799999999999, 221.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 39.14699999999999,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 97.237, 221.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "47,96",
+      "dir": "ltr",
+      "width": 17.549,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 136.384, 221.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 31.009000000000015,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 153.933, 221.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "28",
+      "dir": "ltr",
+      "width": 7.798,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 184.942, 221.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 17, 211.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "JAN/23",
+      "dir": "ltr",
+      "width": 16.39,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 17, 211.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 46.29799999999999,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 33.39, 211.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "1.054",
+      "dir": "ltr",
+      "width": 17.549000000000003,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 79.68799999999999, 211.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 39.14699999999999,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 97.237, 211.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "35,13",
+      "dir": "ltr",
+      "width": 17.549,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 136.384, 211.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 31.009000000000015,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 153.933, 211.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "30",
+      "dir": "ltr",
+      "width": 7.798,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 184.942, 211.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 17, 201.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "DEZ/22",
+      "dir": "ltr",
+      "width": 16.96,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 17, 201.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 45.72799999999999,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 33.96, 201.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "1.109",
+      "dir": "ltr",
+      "width": 17.549000000000003,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 79.68799999999999, 201.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 39.14699999999999,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 97.237, 201.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "33,60",
+      "dir": "ltr",
+      "width": 17.549,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 136.384, 201.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 31.009000000000015,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 153.933, 201.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "33",
+      "dir": "ltr",
+      "width": 7.798,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 184.942, 201.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 17, 191.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "NOV/22",
+      "dir": "ltr",
+      "width": 17.785,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 17, 191.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 44.90299999999999,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 34.785, 191.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "1.206",
+      "dir": "ltr",
+      "width": 17.549000000000003,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 79.68799999999999, 191.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 39.14699999999999,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 97.237, 191.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "29,41",
+      "dir": "ltr",
+      "width": 17.549,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 136.384, 191.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 31.009000000000015,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 153.933, 191.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "41",
+      "dir": "ltr",
+      "width": 7.798,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 184.942, 191.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 17, 181.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "OUT/22",
+      "dir": "ltr",
+      "width": 17.535,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 17, 181.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 58.78699999999999,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 34.535, 181.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0",
+      "dir": "ltr",
+      "width": 3.899,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 93.32199999999999, 181.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 43.05900000000001,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 97.22099999999999, 181.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0,00",
+      "dir": "ltr",
+      "width": 13.650000000000002,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 140.28, 181.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 34.90799999999999,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 153.93, 181.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0",
+      "dir": "ltr",
+      "width": 3.899,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 188.838, 181.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 17, 170.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "SET/22",
+      "dir": "ltr",
+      "width": 16.675,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 17, 170.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 59.64699999999999,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 33.675, 170.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0",
+      "dir": "ltr",
+      "width": 3.899,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 93.32199999999999, 170.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 43.05900000000001,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 97.22099999999999, 170.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0,00",
+      "dir": "ltr",
+      "width": 13.650000000000002,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 140.28, 170.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 34.90799999999999,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 153.93, 170.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0",
+      "dir": "ltr",
+      "width": 3.899,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 188.838, 170.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 17, 160.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "AGO/22",
+      "dir": "ltr",
+      "width": 18.075,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 17, 160.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 58.246999999999986,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 35.075, 160.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0",
+      "dir": "ltr",
+      "width": 3.899,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 93.32199999999999, 160.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 43.05900000000001,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 97.22099999999999, 160.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0,00",
+      "dir": "ltr",
+      "width": 13.650000000000002,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 140.28, 160.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 34.90799999999999,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 153.93, 160.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0",
+      "dir": "ltr",
+      "width": 3.899,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 188.838, 160.75],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 17, 150.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "JUL/22",
+      "dir": "ltr",
+      "width": 15.855,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 17, 150.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 60.466999999999985,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 32.855000000000004, 150.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0",
+      "dir": "ltr",
+      "width": 3.899,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 93.32199999999999, 150.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 43.05900000000001,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 97.22099999999999, 150.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0,00",
+      "dir": "ltr",
+      "width": 13.650000000000002,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 140.28, 150.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 34.90799999999999,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 153.93, 150.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0",
+      "dir": "ltr",
+      "width": 3.899,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 188.838, 150.55],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 17, 140.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "JUN/22",
+      "dir": "ltr",
+      "width": 16.675,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 17, 140.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 59.64699999999999,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 33.675, 140.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0",
+      "dir": "ltr",
+      "width": 3.899,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 93.32199999999999, 140.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 43.05900000000001,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 97.22099999999999, 140.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0,00",
+      "dir": "ltr",
+      "width": 13.650000000000002,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 140.28, 140.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 34.90799999999999,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 153.93, 140.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0",
+      "dir": "ltr",
+      "width": 3.899,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 188.838, 140.35],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 17, 130.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "MAI/22",
+      "dir": "ltr",
+      "width": 15.86,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 17, 130.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 60.46199999999999,
+      "height": 0,
+      "transform": [5, 0, 0, 5, 32.86, 130.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0",
+      "dir": "ltr",
+      "width": 3.899,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 93.32199999999999, 130.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 43.05900000000001,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 97.22099999999999, 130.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0,00",
+      "dir": "ltr",
+      "width": 13.650000000000002,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 140.28, 130.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 34.90799999999999,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 153.93, 130.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "0",
+      "dir": "ltr",
+      "width": 3.899,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 188.838, 130.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 373.25, 191.95],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "Reservado ao Fisco",
+      "dir": "ltr",
+      "width": 75.58399999999997,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 373.25, 191.95],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 367.8, 179.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "SEM VALOR FISCAL",
+      "dir": "ltr",
+      "width": 86.43600000000004,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 367.8, 179.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 303.3, 161.95],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "Base de cálculo (R$)",
+      "dir": "ltr",
+      "width": 88.02900000000004,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 303.3, 161.95],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 22.52099999999973,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 391.3290000000003, 161.95],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Alíquota (%)",
+      "dir": "ltr",
+      "width": 52.497000000000014,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 413.85, 161.95],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 21.20299999999986,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 466.34700000000015, 161.95],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Valor (R$)",
+      "dir": "ltr",
+      "width": 42.50700000000001,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 487.55, 161.95],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [6, 0, 0, 6, 45.35, 116.15],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "Fale com CEMIG: 116 - CEMIG Torpedo 29810 - Ouvidoria CEMIG: 0800 728 3838 -",
+      "dir": "ltr",
+      "width": 231.84800000000004,
+      "height": 6,
+      "transform": [6, 0, 0, 6, 45.35, 116.15],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 1.751999999999839,
+      "height": 0,
+      "transform": [6, 0, 0, 6, 277.19800000000015, 116.15],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Agência Nacional de Energia Elétrica - ANEEL - Telefone: 167 - Ligação gratuita de telefones fixos e móveis.",
+      "dir": "ltr",
+      "width": 257.17500000000035,
+      "height": 5,
+      "transform": [5, 0, 0, 5, 278.95, 116.15],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 128.55, 92.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "Código de Débito Automático",
+      "dir": "ltr",
+      "width": 112.44800000000001,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 128.55, 92.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 30.00199999999998,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 240.99800000000002, 92.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Instalação",
+      "dir": "ltr",
+      "width": 39.128,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 271, 92.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 45.622000000000185,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 310.1279999999998, 92.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Vencimento",
+      "dir": "ltr",
+      "width": 45.344,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 355.75, 92.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 59.5560000000001,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 401.0939999999999, 92.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Total a pagar",
+      "dir": "ltr",
+      "width": 49.79199999999998,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 460.65, 92.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [10, 0, 0, 10, 151.5, 80.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "008118741548",
+      "dir": "ltr",
+      "width": 66.72000000000001,
+      "height": 10,
+      "transform": [10, 0, 0, 10, 151.5, 80.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 44.579999999999984,
+      "height": 0,
+      "transform": [10, 0, 0, 10, 218.22000000000003, 80.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "3004298116",
+      "dir": "ltr",
+      "width": 55.600000000000016,
+      "height": 10,
+      "transform": [10, 0, 0, 10, 262.8, 80.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 35.049999999999955,
+      "height": 0,
+      "transform": [10, 0, 0, 10, 318.40000000000003, 80.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "12/06/2023",
+      "dir": "ltr",
+      "width": 50.04000000000001,
+      "height": 10,
+      "transform": [10, 0, 0, 10, 353.45, 80.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 60.410000000000025,
+      "height": 0,
+      "transform": [10, 0, 0, 10, 403.48999999999995, 80.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "R$158,17",
+      "dir": "ltr",
+      "width": 43.360000000000014,
+      "height": 10,
+      "transform": [10, 0, 0, 10, 463.9, 80.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "Maio/2023",
+      "dir": "ltr",
+      "width": 47.80000000000001,
+      "height": 10,
+      "transform": [10, 0, 0, 10, 150.25, 64.55],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 65.54999999999998,
+      "height": 0,
+      "transform": [10, 0, 0, 10, 198.05000000000004, 64.55],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "83610000001-4 58170138009-8 71075192433-7 08118741548-4",
+      "dir": "ltr",
+      "width": 274.1130000000002,
+      "height": 9.5,
+      "transform": [9.5, 0, 0, 9.5, 263.6, 64.55],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [34, 0, 0, 34, 256.7, 14.15],
+      "fontName": "g_d2_f3",
+      "hasEOL": true
+    },
+    {
+      "str": "NnNnWwNwNnWnNnNwWnWnNnNwNnNnWwWwNnNnNnWwWwNnNnNnWwWwNnWwNnNwNnWnWwNnNnWnNwNnNnNwWwWnWwNwNnNnWnWnNnNwWwNnNnNwWnWwNnNwNnNnWnWwNnNnWnWwNwWwNnWnNnNwNnWwNnWnNwNwNwWnNnWnWnWnNwNwNnWwNnNnWnNwWwNnNnNwWnNnNnNwWnWwWwNnNwNnWnNwNnWnNwWnWnN",
+      "dir": "ltr",
+      "width": 279.2219999999984,
+      "height": 34,
+      "transform": [34, 0, 0, 34, 256.7, 14.15],
+      "fontName": "g_d2_f3",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [7.5, 0, 0, 7.5, 17, 762.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "CENTRO SUL",
+      "dir": "ltr",
+      "width": 48.3,
+      "height": 7.5,
+      "transform": [7.5, 0, 0, 7.5, 17, 762.15],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "35182-036 TIMOTEO, MG",
+      "dir": "ltr",
+      "width": 88.5525,
+      "height": 7.5,
+      "transform": [7.5, 0, 0, 7.5, 17, 753.05],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "CPF 097.7**.***-**",
+      "dir": "ltr",
+      "width": 60.757500000000036,
+      "height": 7.5,
+      "transform": [7.5, 0, 0, 7.5, 17, 743.95],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 31.942000000000004, 696.05],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "Nº DO CLIENTE",
+      "dir": "ltr",
+      "width": 59.38399999999999,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 31.942000000000004, 696.05],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 48.92800000000001,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 91.32600000000001, 696.05],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Nº DA INSTALAÇÃO",
+      "dir": "ltr",
+      "width": 77.15199999999997,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 140.25400000000002, 696.05],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 260.9659999999999, 781.65],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "Referente a",
+      "dir": "ltr",
+      "width": 43.56799999999999,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 260.9659999999999, 781.65],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 71.16799999999967,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 304.53399999999976, 781.65],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Vencimento",
+      "dir": "ltr",
+      "width": 45.344,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 375.70199999999943, 781.65],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 50.13200000000046,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 421.0459999999993, 781.65],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Valor a pagar (R$)",
+      "dir": "ltr",
+      "width": 68.46400000000004,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 471.17799999999977, 781.65],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 324.3, 752.7],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "NOTA FISCAL Nº 037955490 - SÉRIE 000",
+      "dir": "ltr",
+      "width": 133.29400000000015,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 324.3, 752.7],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "Data de emissão: 29/05/2023",
+      "dir": "ltr",
+      "width": 91.58100000000009,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 324.3, 744.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "Consulte pela chave de acesso em:",
+      "dir": "ltr",
+      "width": 111.01300000000015,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 324.3, 735.9],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "http://www.sped.fazenda.mg.gov.br/spedmg/nf3e",
+      "dir": "ltr",
+      "width": 152.41800000000003,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 324.3, 727.5],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "chave de acesso:",
+      "dir": "ltr",
+      "width": 54.537000000000056,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 324.3, 719.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "31230506981180000116660000379554901090271549",
+      "dir": "ltr",
+      "width": 171.556,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 324.3, 710.7],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "Protocolo de autorização: 1312300043188200",
+      "dir": "ltr",
+      "width": 143.81500000000008,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 324.3, 702.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "30.05.2023 às 00:05:59",
+      "dir": "ltr",
+      "width": 73.68900000000006,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 324.3, 693.9],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 86.3, 660.8],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "Classe",
+      "dir": "ltr",
+      "width": 25.792,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 86.3, 660.8],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 80.708,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 112.09200000000001, 660.8],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Subclasse",
+      "dir": "ltr",
+      "width": 39.576,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 192.8, 660.8],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 68.92399999999995,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 232.37600000000006, 660.8],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Modalidade Tarifária",
+      "dir": "ltr",
+      "width": 77.79999999999998,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 301.3, 660.8],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 71.65000000000026,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 379.09999999999974, 660.8],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Datas de Leitura",
+      "dir": "ltr",
+      "width": 62.239999999999974,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 450.75, 660.8],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 78.95, 651.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "Comercial",
+      "dir": "ltr",
+      "width": 40.554,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 78.95, 651.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 63.09799999999997,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 119.50400000000003, 651.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "Outros serviços",
+      "dir": "ltr",
+      "width": 62.61300000000001,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 182.602, 651.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 53.686999999999955,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 245.21500000000003, 651.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "Convencional B3",
+      "dir": "ltr",
+      "width": 68.049,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 298.902, 651.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 42.44900000000024,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 366.95099999999974, 651.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "Anterior",
+      "dir": "ltr",
+      "width": 31.563000000000006,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 409.4, 651.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 16.48700000000008,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 440.9629999999999, 651.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "Atual",
+      "dir": "ltr",
+      "width": 20.502000000000006,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 457.45, 651.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 11.59800000000007,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 477.95199999999994, 651.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "Nº de dias Próxima",
+      "dir": "ltr",
+      "width": 79.73899999999996,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 489.55, 651.1],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "Trifásico",
+      "dir": "ltr",
+      "width": 34.065000000000005,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 82.2, 641.4],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 59.83699999999999,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 116.26500000000001, 641.4],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "e outras atividades",
+      "dir": "ltr",
+      "width": 75.64500000000002,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 176.102, 641.4],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 162.1529999999999,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 251.74700000000007, 641.4],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "13/04",
+      "dir": "ltr",
+      "width": 22.563000000000006,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 413.9, 641.4],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 19.98700000000008,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 436.4629999999999, 641.4],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "15/05",
+      "dir": "ltr",
+      "width": 22.563000000000006,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 456.45, 641.4],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 27.439000000000078,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 479.0129999999999, 641.4],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "32",
+      "dir": "ltr",
+      "width": 10.026000000000002,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 506.452, 641.4],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 25.022000000000048,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 516.478, 641.4],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "15/06",
+      "dir": "ltr",
+      "width": 22.563000000000006,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 541.5, 641.4],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 369.05, 407.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "Informações Técnicas",
+      "dir": "ltr",
+      "width": 84.03200000000001,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 369.05, 407.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [6.5, 0, 0, 6.5, 243.8, 398.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "Tipo de Medição",
+      "dir": "ltr",
+      "width": 50.92750000000003,
+      "height": 6.5,
+      "transform": [6.5, 0, 0, 6.5, 243.8, 398.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 40.97250000000008,
+      "height": 0,
+      "transform": [6.5, 0, 0, 6.5, 294.7274999999999, 398.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Medição",
+      "dir": "ltr",
+      "width": 26.006500000000003,
+      "height": 6.5,
+      "transform": [6.5, 0, 0, 6.5, 335.7, 398.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 32.84350000000012,
+      "height": 0,
+      "transform": [6.5, 0, 0, 6.5, 361.7064999999999, 398.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Leitura",
+      "dir": "ltr",
+      "width": 21.671000000000003,
+      "height": 6.5,
+      "transform": [6.5, 0, 0, 6.5, 394.55, 398.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 18.029000000000053,
+      "height": 0,
+      "transform": [6.5, 0, 0, 6.5, 416.22099999999995, 398.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Leitura",
+      "dir": "ltr",
+      "width": 21.671000000000003,
+      "height": 6.5,
+      "transform": [6.5, 0, 0, 6.5, 434.25, 398.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 24.279000000000053,
+      "height": 0,
+      "transform": [6.5, 0, 0, 6.5, 455.92099999999994, 398.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Constante",
+      "dir": "ltr",
+      "width": 31.7785,
+      "height": 6.5,
+      "transform": [6.5, 0, 0, 6.5, 480.2, 398.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 15.22150000000022,
+      "height": 0,
+      "transform": [6.5, 0, 0, 6.5, 511.9784999999998, 398.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Consumo kWh",
+      "dir": "ltr",
+      "width": 45.500000000000014,
+      "height": 6.5,
+      "transform": [6.5, 0, 0, 6.5, 527.2, 398.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "Anterior",
+      "dir": "ltr",
+      "width": 25.2785,
+      "height": 6.5,
+      "transform": [6.5, 0, 0, 6.5, 392.7, 389.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 18.97150000000005,
+      "height": 0,
+      "transform": [6.5, 0, 0, 6.5, 417.97849999999994, 389.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "Atual",
+      "dir": "ltr",
+      "width": 16.25,
+      "height": 6.5,
+      "transform": [6.5, 0, 0, 6.5, 436.95, 389.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 17.65000000000009,
+      "height": 0,
+      "transform": [6.5, 0, 0, 6.5, 453.19999999999993, 389.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "de Multiplicação",
+      "dir": "ltr",
+      "width": 50.57,
+      "height": 6.5,
+      "transform": [6.5, 0, 0, 6.5, 470.85, 389.7],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 243.8, 381.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "Energia kWh",
+      "dir": "ltr",
+      "width": 40.089000000000034,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 243.8, 381.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 40.01099999999997,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 283.889, 381.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "AHB988002788",
+      "dir": "ltr",
+      "width": 49.434000000000005,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 323.9, 381.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 21.265999999999963,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 373.33400000000006, 381.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "31.141",
+      "dir": "ltr",
+      "width": 21.448,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 394.6, 381.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 18.25200000000001,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 416.048, 381.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "32.362",
+      "dir": "ltr",
+      "width": 21.448,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 434.3, 381.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 38.35200000000003,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 455.748, 381.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "1",
+      "dir": "ltr",
+      "width": 3.899,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 494.1, 381.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 42.05099999999993,
+      "height": 0,
+      "transform": [7, 0, 0, 7, 497.999, 381.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "1.221",
+      "dir": "ltr",
+      "width": 17.549000000000003,
+      "height": 7,
+      "transform": [7, 0, 0, 7, 540.05, 381.3],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [4.5, 0, 0, 4.5, 151.65, 821.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "DOCUMENTO AUXILIAR DA NOTA FISCAL DE ENERGIA ELÉTRICA ELETRÔNICA",
+      "dir": "ltr",
+      "width": 174.74999999999986,
+      "height": 4.5,
+      "transform": [4.5, 0, 0, 4.5, 151.65, 821.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 195.29999999999995,
+      "height": 0,
+      "transform": [4.5, 0, 0, 4.5, 326.4000000000001, 821.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "SEGUNDA VIA",
+      "dir": "ltr",
+      "width": 45.14250000000003,
+      "height": 6.5,
+      "transform": [6.5, 0, 0, 6.5, 521.7, 821.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [4.5, 0, 0, 4.5, 151.65, 815.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "CEMIG DISTRIBUIÇÃO S.A. CNPJ 06.981.180/0001-16 / INSC. ESTADUAL 062.322136.0087.",
+      "dir": "ltr",
+      "width": 192.27799999999996,
+      "height": 4.5,
+      "transform": [4.5, 0, 0, 4.5, 151.65, 815.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "AV. BARBACENA, 1200 - 17° ANDAR - ALA 1 - BAIRRO SANTO AGOSTINHO",
+      "dir": "ltr",
+      "width": 162.50199999999987,
+      "height": 4.5,
+      "transform": [4.5, 0, 0, 4.5, 151.65, 809.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "CEP: 30190-131 - BELO HORIZONTE - MG.",
+      "dir": "ltr",
+      "width": 90.27000000000005,
+      "height": 4.5,
+      "transform": [4.5, 0, 0, 4.5, 151.65, 803.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 95.07999999999984,
+      "height": 0,
+      "transform": [4.5, 0, 0, 4.5, 241.92000000000016, 803.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "TARIFA SOCIAL DE ENERGIA ELÉTRICA - TSEE FOI CRIADA PELA LEI Nº 10.438, DE 26 DE ABRIL DE 2002",
+      "dir": "ltr",
+      "width": 229.9299999999994,
+      "height": 4.5,
+      "transform": [4.5, 0, 0, 4.5, 337, 803.75],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [9, 0, 0, 9, 369.05, 314],
+      "fontName": "g_d2_f1",
+      "hasEOL": true
+    },
+    {
+      "str": "Informações Gerais",
+      "dir": "ltr",
+      "width": 84.03300000000002,
+      "height": 9,
+      "transform": [9, 0, 0, 9, 369.05, 314],
+      "fontName": "g_d2_f1",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [6.8, 0, 0, 6.8, 243.8, 305.6],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "SALDO ATUAL DE GERAÇÃO: 2.755,01 kWh. Tarifa vigente conforme Res Aneel nº 3.046, de 21/06/2022.",
+      "dir": "ltr",
+      "width": 325.14840000000004,
+      "height": 6.8,
+      "transform": [6.8, 0, 0, 6.8, 243.8, 305.6],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "Redução aliquota ICMS conforme Lei Complementar 194/22. Unidade faz parte de sistema de compensação",
+      "dir": "ltr",
+      "width": 328.83039999999994,
+      "height": 6.8,
+      "transform": [6.8, 0, 0, 6.8, 243.8, 297.2],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "de energia. O pagamento desta conta não quita débitos anteriores. Para estes, estão sujeitas penalidades",
+      "dir": "ltr",
+      "width": 321.0336,
+      "height": 6.8,
+      "transform": [6.8, 0, 0, 6.8, 243.8, 288.8],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "legais vigentes (multas) e/ou atualização financeira (juros)baseadas no vencimento das mesmas. Leitura",
+      "dir": "ltr",
+      "width": 316.66040000000015,
+      "height": 6.8,
+      "transform": [6.8, 0, 0, 6.8, 243.8, 280.4],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "realizada conforme calendário de faturamento. É dever do consumidor manter os dados cadastrais sempre",
+      "dir": "ltr",
+      "width": 323.19759999999997,
+      "height": 6.8,
+      "transform": [6.8, 0, 0, 6.8, 243.8, 272],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "atualizados e informar alterações da atividade exercida no local. Faça sua adesão para recebimento da conta",
+      "dir": "ltr",
+      "width": 331.1024000000002,
+      "height": 6.8,
+      "transform": [6.8, 0, 0, 6.8, 243.8, 263.6],
+      "fontName": "g_d2_f2",
+      "hasEOL": true
+    },
+    {
+      "str": "de energia por e-mail acessando www.cemig.com.br. ABR/23 Band. Verde - MAI/23 Band. Verde.",
+      "dir": "ltr",
+      "width": 296.9044,
+      "height": 6.8,
+      "transform": [6.8, 0, 0, 6.8, 243.8, 255.2],
+      "fontName": "g_d2_f2",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [8, 0, 0, 8, 17, 781],
+      "fontName": "g_d2_f4",
+      "hasEOL": true
+    },
+    {
+      "str": "MAIRA AMARAL FERNANDES",
+      "dir": "ltr",
+      "width": 115.09599999999998,
+      "height": 8,
+      "transform": [8, 0, 0, 8, 17, 781],
+      "fontName": "g_d2_f4",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [7.5, 0, 0, 7.5, 17, 772],
+      "fontName": "g_d2_f5",
+      "hasEOL": true
+    },
+    {
+      "str": "RUA JOAO DE ASSIS MARTINS 71 IN",
+      "dir": "ltr",
+      "width": 130.86749999999998,
+      "height": 7.5,
+      "transform": [7.5, 0, 0, 7.5, 17, 772],
+      "fontName": "g_d2_f5",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 107.58850000000007,
+      "height": 0,
+      "transform": [7.5, 0, 0, 7.5, 147.86749999999995, 772],
+      "fontName": "g_d2_f5",
+      "hasEOL": false
+    },
+    {
+      "str": "MAI/2023",
+      "dir": "ltr",
+      "width": 56.35500000000001,
+      "height": 13,
+      "transform": [13, 0, 0, 13, 255.45600000000002, 768],
+      "fontName": "g_d2_f4",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 54.20999999999964,
+      "height": 0,
+      "transform": [13, 0, 0, 13, 311.81100000000004, 768],
+      "fontName": "g_d2_f4",
+      "hasEOL": false
+    },
+    {
+      "str": "12/06/2024",
+      "dir": "ltr",
+      "width": 65.052,
+      "height": 13,
+      "transform": [13, 0, 0, 13, 366.0209999999997, 768],
+      "fontName": "g_d2_f4",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 54.20999999999964,
+      "height": 0,
+      "transform": [13, 0, 0, 13, 431.0729999999997, 768],
+      "fontName": "g_d2_f4",
+      "hasEOL": false
+    },
+    {
+      "str": "158,17",
+      "dir": "ltr",
+      "width": 39.754000000000005,
+      "height": 13,
+      "transform": [13, 0, 0, 13, 485.28299999999933, 768],
+      "fontName": "g_d2_f4",
+      "hasEOL": false
+    },
+    {
+      "str": "",
+      "dir": "ltr",
+      "width": 0,
+      "height": 0,
+      "transform": [15, 0, 0, 15, 22.340000000000003, 682],
+      "fontName": "g_d2_f4",
+      "hasEOL": true
+    },
+    {
+      "str": "1202288569",
+      "dir": "ltr",
+      "width": 83.40000000000002,
+      "height": 15,
+      "transform": [15, 0, 0, 15, 22.340000000000003, 682],
+      "fontName": "g_d2_f4",
+      "hasEOL": false
+    },
+    {
+      "str": " ",
+      "dir": "ltr",
+      "width": 33.35999999999997,
+      "height": 0,
+      "transform": [15, 0, 0, 15, 105.74000000000002, 682],
+      "fontName": "g_d2_f4",
+      "hasEOL": false
+    },
+    {
+      "str": "3004298116",
+      "dir": "ltr",
+      "width": 83.40000000000002,
+      "height": 15,
+      "transform": [15, 0, 0, 15, 139.1, 682],
+      "fontName": "g_d2_f4",
+      "hasEOL": false
+    }
+  ]
+]

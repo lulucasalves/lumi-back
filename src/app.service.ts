@@ -5,6 +5,7 @@ import { Repository } from 'typeorm';
 import { S3 } from 'aws-sdk';
 import { v4 } from 'uuid';
 import * as pdfjs from 'pdfjs-dist';
+import * as pdfParse from 'pdf-parse';
 
 import { Boleto } from './models';
 import { sendDataFromPdf, setFormatedData } from './feature';
@@ -197,11 +198,11 @@ export class AppService {
             pdfData.push(pageData);
           }
 
-          const oficialData = pdfData[0].map((val) => val.str);
+          const oficialData = await pdfParse(file.buffer);
 
-          data.push(sendDataFromPdf(oficialData));
+          data.push(sendDataFromPdf(oficialData.text));
 
-          const processedData = sendDataFromPdf(oficialData);
+          const processedData = sendDataFromPdf(oficialData.text);
 
           const verifyExist = await this.boletoRepo.findOne({
             where: {
@@ -217,15 +218,6 @@ export class AppService {
 
           if (!processedData.data.Total.Quantidade) {
             return { message: 'Ocorreu um erro ao enviar o boleto!' };
-          }
-
-          const [day, month, year] =
-            processedData['Data de emissão'].split('/');
-
-          if (year !== '2023') {
-            return {
-              message: 'Nesta versão só é permitido boletos emitidos em 2023!',
-            };
           }
 
           const params: AWS.S3.PutObjectRequest = {
@@ -253,10 +245,11 @@ export class AppService {
           data.push(processedData['Número UC']);
         } catch (err) {
           console.log(err);
+          return { message: 'Ocorreu um erro ao enviar o boleto!' };
         }
       }
 
-      const [day, month, year] = data[0].dataEmissao.split('/');
+      const [day, month, year] = data[0]['Data de emissão'].split('/');
 
       return this.getList(data[0]['Número UC'], year);
     } catch (err) {

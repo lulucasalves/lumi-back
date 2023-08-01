@@ -1,45 +1,107 @@
 import { transformNumber } from '.';
+import { validatedDates } from './validatedDates';
 
-export function sendDataFromPdf(data: string[]) {
-  let comprovantePagamento = 0;
-  let outrasAtividades = 0;
+export function sendDataFromPdf(dataBrute: string) {
+  let nomeUc = '';
+  let numeroUc = '';
+  let enderecoUc = '';
+  let dataEmissao = '';
+  let dataVencimento = '';
+  let energiaEletricaQuantidade = '';
+  let energiaInjetadaQuantidade = '';
+  let icmsQuantidade = '';
+  let energiaEletricaPrecoUnitario = '';
+  let energiaInjetadaPrecoUnitario = '';
+  let icmsPrecoUnitario = '';
+  let debitoValor = '0';
+  let icmsValor = '';
+  let energiaInjetadaValor = '';
+  let energiaEletricaValor = '';
+  let contribuicaoPublicaValor = '';
+  let energiaEletricaTarifaUnitaria = '';
+  let energiaInjetadaTarifaUnitaria = '';
+  let icmsTarifaUnitaria = '';
+
+  const data = dataBrute.split('\n');
 
   for (let i = 0; i < data.length; i++) {
-    if (
-      data[i].includes('Comprovante de Pagamento') ||
-      data[i].includes('NnNn')
-    ) {
-      comprovantePagamento = i;
+    const text = data[i].toLowerCase();
+    const textNoSpace = text.replaceAll(' ', '');
+    let textNumbers = 0;
+
+    if (text.includes('data de emissão: ')) {
+      const [, dateSplited] = textNoSpace.split(':');
+
+      dataEmissao = dateSplited;
     }
 
-    if (data[i] === 'e outras atividades') {
-      outrasAtividades = i;
+    if (textNoSpace.includes('/')) {
+      const [month] = textNoSpace.split('/');
+
+      if (validatedDates.includes(month)) {
+        const textValidated = data[i].split(' ');
+        dataVencimento = textValidated.join('').slice(8, 18);
+      }
+    }
+    for (const t of textNoSpace) {
+      if (!isNaN(parseInt(t))) {
+        textNumbers += 1;
+      } else {
+        textNumbers = 0;
+      }
+    }
+    if (text.includes('rua ')) {
+      enderecoUc = data[i];
+      nomeUc = data[i - 1];
+    }
+
+    if (textNumbers === 20) {
+      numeroUc = data[i].slice(2, 12);
+    }
+
+    if (data[i].includes('Energia Elétricak')) {
+      const listTable = data[i].split(' ').filter((val) => val !== '');
+      energiaEletricaQuantidade = listTable[2];
+      energiaEletricaPrecoUnitario = listTable[3];
+      energiaEletricaValor = listTable[4];
+      energiaEletricaTarifaUnitaria = listTable[5];
+    }
+
+    if (data[i].includes('Energia injetada')) {
+      const listTable = data[i].split(' ').filter((val) => val !== '');
+      energiaInjetadaQuantidade = listTable[3];
+      energiaInjetadaPrecoUnitario = listTable[4];
+      energiaInjetadaValor = listTable[5];
+      energiaInjetadaTarifaUnitaria = listTable[6];
+    }
+
+    if (data[i].includes('Energia compensada')) {
+      const listTable = data[i].split(' ').filter((val) => val !== '');
+      energiaInjetadaQuantidade = listTable[4];
+      energiaInjetadaPrecoUnitario = listTable[5];
+      energiaInjetadaValor = listTable[6];
+      energiaInjetadaTarifaUnitaria = listTable[7];
+    }
+
+    if (data[i].includes('ICMSkWh')) {
+      const listTable = data[i].split(' ').filter((val) => val !== '');
+      icmsQuantidade = listTable[4];
+      icmsPrecoUnitario = listTable[5];
+      icmsValor = listTable[6];
+      icmsTarifaUnitaria = listTable[7];
+    }
+
+    if (text.includes('via de débito')) {
+      const [, debito] = textNoSpace.split('débito');
+      debitoValor = debito;
+    }
+
+    if (text.includes('publica municipal')) {
+      const [, contribuicao] = text.split('municipal');
+      contribuicaoPublicaValor = contribuicao;
     }
   }
 
-  const energiaEletricaQuantidade = data[31];
-  const energiaEletricaPrecoUnitario = data[33];
-  const energiaEletricaValor = data[35];
-  const energiaEletricaTarifaUnitaria = data[37];
-  const energiaInjetadaQuantidade = data[42];
-  const energiaInjetadaPrecoUnitario = data[44];
-  const energiaInjetadaValor = data[46];
-  const energiaInjetadaTarifaUnitaria = data[48];
-  const icmsQuantidade = data[53];
-  const icmsPrecoUnitario = data[55];
-  const icmsValor = data[57];
-  const icmsTarifaUnitaria = data[59];
-  const contribuicaoPublicaValor = data[62];
-  const viadebito = data[65].includes(',') ? data[65] : '-';
-  const nomeUc = data[comprovantePagamento + 2];
-  const enderecoUc = `${data[comprovantePagamento + 4]} - ${
-    data[comprovantePagamento + 5]
-  } - ${data[comprovantePagamento + 6]}`;
-  const numeroUc = data[comprovantePagamento + 13];
-  const [, anoEmissao] = data[comprovantePagamento + 23].split('/');
-  const dataEmissao = `${data[outrasAtividades + 4]}/${anoEmissao}`;
-  const dataVencimento = data[comprovantePagamento + 25];
-  const debitoValor = viadebito !== '-' ? transformNumber(viadebito) : 0;
   const icmsSt =
     transformNumber(icmsValor) + transformNumber(energiaInjetadaValor);
 
@@ -60,7 +122,8 @@ export function sendDataFromPdf(data: string[]) {
           transformNumber(energiaInjetadaPrecoUnitario) +
           transformNumber(icmsPrecoUnitario),
         Valor:
-          debitoValor +
+          0.001 +
+          transformNumber(debitoValor) +
           icmsSt +
           transformNumber(energiaEletricaValor) +
           transformNumber(contribuicaoPublicaValor),
@@ -92,7 +155,7 @@ export function sendDataFromPdf(data: string[]) {
       Contribuição: {
         Valor: transformNumber(contribuicaoPublicaValor),
       },
-      'Via de débito': viadebito,
+      'Via de débito': transformNumber(debitoValor),
     },
   };
 }

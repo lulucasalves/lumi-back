@@ -17,6 +17,6 @@ describe('AppService', () => {
   it('should return a object for graphics', async () => {
     const data = await appService.getData();
 
-    expect(data[0]).toBe('BRONYER TOZATTI FERREIRA - 7202788969');
+    expect(data.ucs[0]).toBe('BRONYER TOZATTI FERREIRA - 7202788969');
   });
 });
