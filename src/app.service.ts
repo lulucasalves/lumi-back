@@ -106,9 +106,17 @@ export class AppService {
 
   async deletePdf(id: string) {
     try {
+      const files = await this.boletoRepo.find();
+
+      if (files.length < 2) {
+        return {
+          message: 'É necessário deixar pelo menos 1 boleto no sistema!',
+        };
+      }
       const s3 = new S3();
 
       const uc = await this.boletoRepo.findOne({ where: { id } });
+
       const [day, month, year] = uc.dataEmissao.split('/');
       await this.boletoRepo.delete({ id });
       await s3.deleteObject({ Bucket: 'lumilucas', Key: id }).promise();
